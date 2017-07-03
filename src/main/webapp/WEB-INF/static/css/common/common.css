@@ -1,0 +1,70 @@
+body {
+	margin: auto;
+	width: 1080px;
+	border: 5px solid grey;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 30px;
+}
+
+/* 横向排列列表  */
+.list-float ul {
+	display: inline;
+}
+
+.list-float li {
+	padding: 0px 15px 0px 15px;
+	display: inline;
+	list-style: none;
+}
+
+/* 右侧浮动  */
+.style-right {
+	float: right;
+}
+
+/* 注册登录表格 */
+.table-login {
+	margin: auto;
+	margin-top: 10%;
+}
+
+/* 列表式表格 */
+.table-list {
+	margin: auto;
+	width: 100%;
+	text-shadow: 1px 1px 2px gray;
+	text-align: center;
+	font-size: 20px;
+	table-layout: fixed;
+}
+
+.table-list td, th {
+	word-break: keep-all; /* 不换行 */
+	overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+	text-overflow: ellipsis;
+	text-align: center;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+/*表格行 鼠标悬停阴影,nohover类除外*/
+.table-list tr:not(:FIRST-CHILD):hover {
+	background-color: #f5f5f5;
+}
+
+
+/* table-list类的第一行*/
+.table-list-title {
+	background-color: #c0c0c0;
+}
+
+.errMsg {
+	text-align: center;
+	color: red;
+}
+
+.tdMsg {
+	width: 100px;
+}
